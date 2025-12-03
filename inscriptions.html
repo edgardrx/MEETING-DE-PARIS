@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Inscriptions - Meeting de Paris</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="container header-content">
+        <div class="logo">
+            <span class="logo-title">MEETING DE PARIS</span>
+            <span class="logo-subtitle">Athlétisme</span>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="evenement.html">L'événement</a></li>
+                <li><a href="programme.html">Programme</a></li>
+                <li><a href="infos-pratiques.html">Infos pratiques</a></li>
+                <li><a href="inscriptions.html" class="active">Inscriptions</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="container section">
+        <h1>Inscriptions & Billetterie</h1>
+        <p>
+            Réservez dès maintenant vos places pour le <strong>Meeting de Paris d’Athlétisme</strong>
+            du <strong>26 juin 2026</strong> au Stade Charléty.
+        </p>
+    </section>
+
+    <section class="section section-alt">
+        <div class="container">
+            <h2>Tarifs</h2>
+            <div class="grid-2">
+                <div>
+                    <ul class="price-list">
+                        <li><strong>Moins de 12 ans :</strong> 6 €</li>
+                        <li><strong>Moins de 26 ans :</strong> 15 €</li>
+                        <li><strong>Licencié FFA :</strong> 15 €</li>
+                        <li><strong>Tarif normal :</strong> 20 €</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Catégories de billets</h3>
+                    <p>
+                        Lors de votre inscription, vous choisissez une
+                        <strong>catégorie tarifaire</strong> :
+                    </p>
+                    <ul>
+                        <li>Catégorie A : Tarif normal</li>
+                        <li>Catégorie B : Moins de 26 ans / Licencié FFA</li>
+                        <li>Catégorie C : Moins de 12 ans</li>
+                    </ul>
+                    <p>
+                        Un contrôle pourra être effectué à l’entrée (pièce d’identité,
+                        licence FFA, etc.).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container section">
+        <h2>Formulaire d’inscription (exemple HTML)</h2>
+        <p>
+            Le formulaire ci-dessous est un <strong>formulaire HTML simple</strong> illustrant
+            la billetterie en ligne. Les modalités de paiement sont indiquées à titre fictif.
+        </p>
+
+        <form class="form-card">
+            <div class="form-group">
+                <label for="nom">Nom *</label>
+                <input type="text" id="nom" name="nom" required>
+            </div>
+
+            <div class="form-group">
+                <label for="prenom">Prénom *</label>
+                <input type="text" id="prenom" name="prenom" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="telephone">Téléphone *</label>
+                <input type="tel" id="telephone" name="telephone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="naissance">Date de naissance *</label>
+                <input type="date" id="naissance" name="naissance" required>
+            </div>
+
+            <div class="form-group">
+                <label for="licence">Numéro de licence FFA (optionnel)</label>
+                <input type="text" id="licence" name="licence" placeholder="Si licencié FFA">
+            </div>
+
+            <div class="form-group">
+                <label for="categorie">Catégorie tarifaire *</label>
+                <select id="categorie" name="categorie" required>
+                    <option value="">-- Sélectionnez une catégorie --</option>
+                    <option value="A">Catégorie A - Tarif normal</option>
+                    <option value="B">Catégorie B - Moins de 26 ans / Licencié FFA</option>
+                    <option value="C">Catégorie C - Moins de 12 ans</option>
+                </select>
+            </div>
+
+            <div class="form-group form-checkbox">
+                <input type="checkbox" id="reglement" name="reglement" required>
+                <label for="reglement">J’accepte le règlement du Meeting de Paris.</label>
+            </div>
+
+            <p class="payment-info">
+                Modalités de paiement : <strong>paiement en ligne sécurisé</strong>.
+            </p>
+
+            <button type="submit" class="btn-primary">Valider mon inscription</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <div class="container footer-content">
+        <p>Site réalisé dans le cadre du M2 STAPS MOS</p>
+        <p><strong>EDGAR DURIEUX</strong> – 2025-2026</p>
+        <p>Contact : <a href="mailto:44013975@parisnanterre.fr">44013975@parisnanterre.fr</a></p>
+    </div>
+</footer>
+</body>
+</html>

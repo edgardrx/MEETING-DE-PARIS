@@ -1,0 +1,305 @@
+
+:root {
+    --primary: #0a2342;
+    --secondary: #2d5dd0;
+    --light: #f5f7fb;
+    --accent: #00a8e8;
+    --text-main: #1f2933;
+    --text-light: #f9fafb;
+    --border-radius: 8px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+    color: var(--text-main);
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 3rem 0;
+}
+
+.section-alt {
+    background-color: var(--light);
+}
+
+header {
+    background-color: var(--primary);
+    color: var(--text-light);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 0;
+}
+
+.logo-title {
+    display: block;
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: 0.07em;
+}
+
+.logo-subtitle {
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-size: 0.95rem;
+    padding: 0.4rem 0.7rem;
+    border-radius: 999px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.nav-links a:hover {
+    background-color: var(--accent);
+    color: #001021;
+}
+
+.nav-links a.active {
+    background-color: var(--secondary);
+}
+
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-home {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: var(--text-light);
+    padding: 4rem 0;
+}
+
+.hero-small {
+    height: 260px;
+}
+
+.hero-image {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-text {
+    position: relative;
+}
+
+.hero-home .hero-text {
+    text-align: left;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: var(--text-light);
+    padding: 0 5%;
+    background: linear-gradient(90deg, rgba(10,35,66,0.85), rgba(10,35,66,0.2));
+}
+
+.hero h1 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+.hero-subtitle {
+    font-size: 1rem;
+    max-width: 600px;
+}
+
+h1, h2, h3 {
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    font-size: 0.98rem;
+}
+
+.grid-2 {
+    display: grid;
+    gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .grid-2 {
+        grid-template-columns: 2fr 1.3fr;
+    }
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(15, 23, 42, 0.08);
+}
+
+ul {
+    margin-left: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+}
+
+.price-list {
+    list-style: none;
+    margin-left: 0;
+}
+
+.price-list li {
+    padding: 0.3rem 0;
+}
+
+.timeline {
+    border-left: 3px solid var(--secondary);
+    margin-left: 0.7rem;
+    padding-left: 1.5rem;
+}
+
+.timeline-item {
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -1.6rem;
+    top: 0.3rem;
+    width: 10px;
+    height: 10px;
+    background-color: var(--secondary);
+    border-radius: 50%;
+}
+
+.timeline-time {
+    font-weight: 700;
+    color: var(--secondary);
+    margin-bottom: 0.2rem;
+}
+
+.form-card {
+    background-color: #ffffff;
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(15, 23, 42, 0.08);
+    max-width: 600px;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 0.5rem 0.6rem;
+    border-radius: 4px;
+    border: 1px solid #cbd2e1;
+    font-size: 0.95rem;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: var(--secondary);
+    box-shadow: 0 0 0 2px rgba(45, 93, 208, 0.2);
+}
+
+.form-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.form-checkbox input {
+    width: auto;
+}
+
+.payment-info {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.btn-primary {
+    background-color: var(--secondary);
+    color: #ffffff;
+    border: none;
+    padding: 0.7rem 1.4rem;
+    border-radius: 999px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--accent);
+    transform: translateY(-1px);
+}
+
+footer {
+    background-color: var(--primary);
+    color: var(--text-light);
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+}
+
+.footer-content {
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+.footer-content a {
+    color: var(--text-light);
+    text-decoration: underline;
+}

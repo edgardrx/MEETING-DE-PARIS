@@ -1,0 +1,25 @@
+Note explicative sur l’usage de l’intelligence artificielle
+
+Dans le cadre de l’UE de création de site web statique en M2 STAPS Management des Organisations Sportives, j’ai utilisé l’outil d’intelligence artificielle générative ChatGPT (OpenAI) pour m’aider à concevoir la structure et le contenu de mon site.
+
+Rôles de l’IA dans ce projet :
+- Aide à la définition de la structure générale du site (organisation des pages, menu de navigation, sections principales).
+- Génération d’un premier jet de code HTML et CSS conforme aux consignes (site statique, plusieurs pages, fichier CSS séparé, menu commun).
+- Proposition de textes de présentation (étudiant, formation, université) et de description de l’événement sportif (Meeting de Paris d’Athlétisme).
+- Proposition d’un formulaire HTML simple pour la page “Inscriptions”.
+
+Limites et intervention manuelle :
+- Les textes générés automatiquement ont été relus, corrigés et adaptés afin de correspondre à mon profil, à mon parcours et à l’événement choisi.
+- Certaines formulations ont été reformulées et simplifiées pour améliorer la cohérence, la clarté et le style.
+- La structure finale des pages, l’orthographe, la mise en forme et certains choix de titres et de sections ont été ajustés manuellement.
+- Le choix des images libres de droit et leur intégration dans le dossier “images/” sont réalisés manuellement.
+
+Responsabilité de l’étudiant :
+Même si l’IA a servi de support technique et rédactionnel, je reste responsable :
+- du choix des contenus publiés sur le site ;
+- de la conformité du projet avec les consignes de l’UE ;
+- des modifications manuelles nécessaires pour personnaliser le site et montrer ma capacité à utiliser de façon critique un outil d’IA.
+
+Nom de l’étudiant : Edgar DURIEUX
+Formation : M2 STAPS Management des Organisations Sportives – Université Paris-Nanterre
+Année universitaire : 2025-2026
